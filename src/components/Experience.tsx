@@ -2,11 +2,32 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    year: "2025-2026",
+    title: "Havelock Smart Resident Portal - AN AI-Driven Apartment Management System",
+    company: "University of Bedfordshire",
+    description: "Developed a full stack smart resident management system using React.js, Node.js and MongoDB.Implemented AI-based complaint prioritization and role-based access control.Built features such as visitor pass generation, parcel tracking and billing management.Designed RESTful APIs and ensured secure, scalable system architecture.",
+    tags: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB" ]
+  },
+  {
+    year: "2026",
+    title: "Vill 97 - Official Website",
+    company: "University of Bedfordshire",
+    description: "Developed a full-stack web application using React.js, Node.js and PostgreSQL.Contributed as a Scheduling Manager, planning and tracking project timelines to ensure timely delivery.Designed and implemented a User Management System for handling user registration, authentication and data management.Colloborated within a team consist of five members with divided roles as Project Manager, Startup Manager, Quality Manager, Risk Manager and Scheduling Manager using version control tools to manage code and project workflow.Worked under the Agile Methodology Concept.",
+    tags: ["React", "Tailwind CSS", "Node.js", "PostgreSQL" ]
+  },
+  {
+    year: "2026",
+    title: "Banana Math Game",
+    company: "University of Bedfordshire",
+    description: "Developed a user-friendly web application for a given API in university project.This is a puzzled game and added more events to make it fun.This was developed by using html, CSS, JavaScript, PHP and MySQL.",
+    tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL" ]
+  },
+  {
     year: "2025",
     title: "Wealth Management App with AI Recommendation System",
     company: "Codewave Academy",
     description: "Built a full-stack, AI-augmented wealth management app using Next.js 14, Tailwind, Express, and MongoDB. Implemented secure REST APIs, authentication UX, and Amazon Bedrock-powered recommendations. Delivered production-ready features including logging, rate limiting, and deployment documentation.",
-    tags: ["Next.js 14", "Tailwind CSS", "Express", "MongoDB", "AWS Bedrock"]
+    tags: ["Next.js 14", "Tailwind CSS", "Node.js", "Express", "MongoDB", "AWS Bedrock"]
   },
   {
     year: "2022-2025",
@@ -20,7 +41,7 @@ const experiences = [
     title: "E-commerce Website for Luxury Watches",
     company: "SLIIT City Uni",
     description: "Developed a fully functional e-commerce website with responsive modern UI. Implemented dynamic product listings, user authentication, shopping cart, and secure checkout using PHP and MySQL. Designed intuitive front-end pages with HTML, CSS, and JavaScript.",
-    tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript"]
+    tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL"]
   }
 ];
 

@@ -4,7 +4,7 @@ const skillCategories = [
   {
     icon: Code,
     title: "Frontend Development",
-    skills: ["React.js", "Next.js", "HTML/CSS", "Bootstrap/Tailwind CSS", "TypeScript", "JavaScript"]
+    skills: ["React.js", "Next.js", "HTML/CSS", "Bootstrap/Tailwind CSS", "TypeScript", "JavaScript", "JQuery"]
   },
   {
     icon: Database,
@@ -14,7 +14,7 @@ const skillCategories = [
   {
     icon: Database,
     title: "Database Management",
-    skills: ["MongoDB", "MySQL"]
+    skills: ["MongoDB", "MySQL", "PostgreSQL"]
   },
   {
     icon: Wrench,

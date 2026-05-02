@@ -17,6 +17,8 @@ const education = [
 
 const achievements = [
   "Higher Diploma in Information Technology (SLIIT City Uni)",
+  "Certificate in Next Gen-AI Bootcamp (Codewave Academy)",
+  "Certificate in Artificial Intelligence (AII)",
   "Certificate in Human Resource Management (CIPM)",
   "G.C.E. Advance Level Certificate (D.S.Sennanayaka National School Beruwala)"
 ];
