@@ -37,9 +37,7 @@ const Hero = () => {
               Software Engineering Student
             </h2>
             <p className="text-muted-foreground max-w-xl mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: '0.5s' }}>
-              An enthusiastic student at University of Bedfordshire passionate about web development, 
-              problem-solving, and exploring innovative solutions in tech. Always eager to learn, 
-              collaborate, and contribute to impactful projects.
+              Final year Software Engineering undergraduate student of SLIIT City Uni affiliated with University of Bedfordshire with a strong interest in MERN Stack development. I have hands-on experience building full-stack applications using MongoDB, Express.js, React and Node.js. I am passionate about developing efficient, user-friendly web solutions and continuously improving my technical skills while seeking opportunities to grow as a developer.
             </p>
             
             {/* Contact Info */}
