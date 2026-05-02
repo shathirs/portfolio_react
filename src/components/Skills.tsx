@@ -3,28 +3,38 @@ import { Code, Database, Cloud, Wrench, Globe } from "lucide-react";
 const skillCategories = [
   {
     icon: Code,
-    title: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "TypeScript", "HTML/CSS", "JavaScript"]
+    title: "Frontend Development",
+    skills: ["React.js", "Next.js", "HTML/CSS", "Bootstrap/Tailwind CSS", "TypeScript", "JavaScript"]
   },
   {
     icon: Database,
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "MongoDB", "MySQL", "REST APIs", "PHP"]
+    title: "Backend Development",
+    skills: ["Node.js", "Express.js", "REST APIs", "PHP"]
   },
   {
-    icon: Cloud,
-    title: "Cloud & DevOps",
-    skills: ["AWS", "Amazon Bedrock", "Git", "Deployment"]
+    icon: Database,
+    title: "Database Management",
+    skills: ["MongoDB", "MySQL"]
   },
   {
     icon: Wrench,
-    title: "Tools & Methods",
-    skills: ["Agile Development", "C++", "Problem Solving", "Teamwork"]
+    title: "Tools & Technologies",
+    skills: ["Git & GitHub", "VS Code", "Cursor", "Postman"]
+  },
+  {
+    icon: Cloud,
+    title: "Cloud Technologies / Cloud Platforms",
+    skills: ["AWS"]
   },
   {
     icon: Globe,
-    title: "Languages",
-    skills: ["English", "Sinhala", "Tamil"]
+    title: "Web & Software Concepts",
+    skills: ["Agile Methodology", "CRUD Operations"]
+  },
+  {
+    icon: Globe,
+    title: "Other Skills",
+    skills: ["English", "Sinhala", "Tamil", "Problem-Solving", "Teamwork"]
   }
 ];
 
