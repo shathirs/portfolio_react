@@ -26,12 +26,12 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24 px-4 bg-secondary/30">
+    <section id="projects" className="py-24 px-4 bg-secondary/30">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-primary font-mono text-sm mb-3">My Journey</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Professional <span className="gradient-text">Experience</span>
+            Academic <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Real-world projects that showcase my skills in building complete web applications.

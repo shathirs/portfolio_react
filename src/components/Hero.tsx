@@ -60,13 +60,17 @@ const Hero = () => {
                 <Mail className="w-4 h-4" />
                 Get in Touch
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Github className="w-4 h-4" />
-                GitHub
+              <Button asChild variant="outline" size="lg" className="gap-2">
+                <a href="https://github.com/shathirs" target="_blank" rel="noreferrer">
+                  <Github className="w-4 h-4" />
+                  GitHub
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <Linkedin className="w-4 h-4" />
-                LinkedIn
+              <Button asChild variant="outline" size="lg" className="gap-2">
+                <a href="https://www.linkedin.com/in/shathir-sheriff/" target="_blank" rel="noreferrer">
+                  <Linkedin className="w-4 h-4" />
+                  LinkedIn
+                </a>
               </Button>
             </div>
           </div>
