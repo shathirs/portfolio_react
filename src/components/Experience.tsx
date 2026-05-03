@@ -30,7 +30,7 @@ const experiences = [
     tags: ["Next.js 14", "Tailwind CSS", "Node.js", "Express", "MongoDB", "AWS Bedrock"]
   },
   {
-    year: "2022-2025",
+    year: "2024",
     title: "Inventory Management System",
     company: "SLIIT City Uni - HD in IT",
     description: "Developed a complete inventory management system for a seafood restaurant client. Built responsive React front-end with RESTful APIs using Node.js and Express.js, connected to MongoDB for real-time data handling. Included role-based login, PDF reporting, and low-stock alerts.",
