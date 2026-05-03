@@ -16,7 +16,7 @@ const experiences = [
     tags: ["React", "Tailwind CSS", "Node.js", "PostgreSQL" ]
   },
   {
-    year: "2026",
+    year: "2025",
     title: "Banana Math Game",
     company: "University of Bedfordshire",
     description: "Developed a user-friendly web application for a given API in university project.This is a puzzled game and added more events to make it fun.This was developed by using html, CSS, JavaScript, PHP and MySQL.",
