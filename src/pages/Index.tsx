@@ -6,6 +6,7 @@ import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import PortfolioAiChat from "@/components/PortfolioAiChat";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Skills />
       <Contact />
       <Footer />
+      <PortfolioAiChat />
     </main>
   );
 };
