@@ -1,62 +1,6 @@
 import { Briefcase, Calendar, Github } from "lucide-react";
-
-const projects = [
-  {
-    year: "2025-Present",
-    title: "Havelock Smart Resident Portal - AN AI-Driven Apartment Management System",
-    company: "University of Bedfordshire",
-    description: "Developed a full stack smart resident management system using React.js, Node.js and MongoDB.Implemented AI-based complaint prioritization and role-based access control.Built features such as visitor pass generation, parcel tracking and billing management.Designed RESTful APIs and ensured secure, scalable system architecture.",
-    github: "https://github.com/shathirs/havelock_smart.git",
-    tags: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB" ]
-  },
-  {
-    year: "2026",
-    title: "Villa 97, Bolgoda - Official Website",
-    company: "University of Bedfordshire",
-    description: "Developed a full-stack web application using React.js, Node.js and PostgreSQL.Contributed as a Scheduling Manager, planning and tracking project timelines to ensure timely delivery.Designed and implemented a User Management System for handling user registration, authentication and data management.Colloborated within a team consist of five members with divided roles as Project Manager, Startup Manager, Quality Manager, Risk Manager and Scheduling Manager using version control tools to manage code and project workflow.Worked under the Agile Methodology Concept.",
-    github: "",
-    tags: ["React", "Tailwind CSS", "Node.js", "PostgreSQL" ]
-  },
-  {
-    year: "2026",
-    title: "AI Recipe Generator",
-    description: "Developed a full-stack web application using React.js, Node.js and PostgreSQL.Google Gemini for recipe generation (and pantry-aware ideas).JWT authentication; optional SMTP password-reset emails.Users save recipes, plan weekly meals, build shopping lists (including sync from meal plans), and manage a pantry.",
-    github: "https://github.com/shathirs/ai-recipe-generator.git",
-    tags: ["React", "Tailwind CSS", "Node.js", "PostgreSQL" ]
-  },
-  {
-    year: "2025",
-    title: "Banana Math Game",
-    company: "University of Bedfordshire",
-    description: "Developed a user-friendly web application for a given API in university project.This is a puzzled game and added more events to make it fun.This was developed by using html, CSS, JavaScript, PHP and MySQL.",
-    github: "",
-    tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL" ]
-  },
-  {
-    year: "2025",
-    title: "Wealth Management App with AI Recommendation System",
-    company: "Codewave Academy",
-    description: "Built a full-stack, AI-augmented wealth management app using Next.js 14, Tailwind, Express, and MongoDB. Implemented secure REST APIs, authentication UX, and Amazon Bedrock-powered recommendations. Delivered production-ready features including logging, rate limiting, and deployment documentation.",
-    github: "https://github.com/shathirs/codewave-academy.git",
-    tags: ["Next.js 14", "Tailwind CSS", "Node.js", "Express", "MongoDB", "AWS Bedrock"]
-  },
-  {
-    year: "2024",
-    title: "Inventory Management System",
-    company: "SLIIT City Uni - HD in IT",
-    description: "Developed a complete inventory management system for a seafood restaurant client. Built responsive React front-end with RESTful APIs using Node.js and Express.js, connected to MongoDB for real-time data handling. Included role-based login, PDF reporting, and low-stock alerts.",
-    github: "",
-    tags: ["React", "Node.js", "Express.js", "MongoDB", "REST API"]
-  },
-  {
-    year: "2023",
-    title: "E-commerce Website for Luxury Watches",
-    company: "SLIIT City Uni - HD in IT",
-    description: "Developed a fully functional e-commerce website with responsive modern UI. Implemented dynamic product listings, user authentication, shopping cart, and secure checkout using PHP and MySQL. Designed intuitive front-end pages with HTML, CSS, and JavaScript.",
-    github: "",
-    tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL"]
-  }
-];
+import { Link } from "react-router-dom";
+import { projects } from "@/data/projects";
 
 const Projects = () => {
   return (
@@ -102,17 +46,27 @@ const Projects = () => {
                     <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                       {exp.description}
                     </p>
-                    {exp.github && (
-                      <a
-                        href={exp.github}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-4"
-                      >
-                        <Github className="w-4 h-4" />
-                        View on GitHub
-                      </a>
-                    )}
+                    <div className="mb-5 space-y-3">
+                      {exp.github && (
+                        <a
+                          href={exp.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                        >
+                          <Github className="w-4 h-4" />
+                          View on GitHub
+                        </a>
+                      )}
+                      <div>
+                        <Link
+                          to={`/projects/${exp.slug}`}
+                          className="inline-flex items-center rounded-md border border-primary/40 px-3 py-1.5 text-sm text-primary transition-colors hover:bg-primary/10"
+                        >
+                          Read More
+                        </Link>
+                      </div>
+                    </div>
                     <div className="flex flex-wrap gap-2">
                       {exp.tags.map((tag) => (
                         <span 
