@@ -1,4 +1,9 @@
 export type Project = {
+  reports?: {
+    title: string;
+    fileUrl: string;
+    type?: "pdf" | "doc" | "docx";
+  }[];
   year: string;
   title: string;
   company?: string;
@@ -31,6 +36,18 @@ export const projects: Project[] = [
     videoTitle: "Havelock Smart Demo Recording",
     videoEmbedUrl: "https://drive.google.com/file/d/1S74rWwFVvVkRUkRbip8GO20ytL8xlwdM/preview",
     videoDriveUrl: "https://drive.google.com/file/d/1S74rWwFVvVkRUkRbip8GO20ytL8xlwdM/view?usp=drive_link",
+    reports: [
+      {
+        title: "Contextual Report",
+        fileUrl: "/projects/Havelock Smart/reports/2526110 - Contextual Report.pdf",
+        type: "pdf"
+      },
+      {
+        title: "Havelock Smart SRS Document",
+        fileUrl: "/projects/Havelock Smart/reports/srs.docx",
+        type: "docx"
+      }
+    ],
     tags: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
     slug: "havelock-smart-resident-portal"
   },

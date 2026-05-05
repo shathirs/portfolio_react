@@ -1,6 +1,7 @@
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
+import cvFile from "@/assets/Shathir_CV.pdf";
 
 const Hero = () => {
   return (
@@ -68,6 +69,11 @@ const Hero = () => {
                 <a href="https://www.linkedin.com/in/shathir-sheriff/" target="_blank" rel="noreferrer">
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="gap-2">
+                <a href={cvFile} target="_blank" rel="noreferrer">
+                  Download CV
                 </a>
               </Button>
             </div>

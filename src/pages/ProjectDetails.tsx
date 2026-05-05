@@ -100,6 +100,26 @@ const ProjectDetails = () => {
             </div>
           )}
 
+          {project.reports && project.reports.length > 0 && (
+            <div className="mb-6">
+              <h2 className="text-lg font-semibold mb-3">Project Reports</h2>
+              <div className="space-y-2">
+                {project.reports.map((report, index) => (
+                  <a
+                    key={`${project.slug}-report-${index}`}
+                    href={report.fileUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block rounded-md border border-border px-4 py-3 text-sm transition-colors hover:bg-secondary/50"
+                  >
+                    <span className="font-medium">{report.title}</span>
+                    {report.type && <span className="ml-2 text-muted-foreground uppercase">({report.type})</span>}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <span key={tag} className="px-3 py-1 text-xs font-mono bg-primary/10 text-primary rounded-full">
