@@ -1,18 +1,27 @@
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, Github } from "lucide-react";
 
-const experiences = [
+const projects = [
   {
-    year: "2025-2026",
+    year: "2025-Present",
     title: "Havelock Smart Resident Portal - AN AI-Driven Apartment Management System",
     company: "University of Bedfordshire",
     description: "Developed a full stack smart resident management system using React.js, Node.js and MongoDB.Implemented AI-based complaint prioritization and role-based access control.Built features such as visitor pass generation, parcel tracking and billing management.Designed RESTful APIs and ensured secure, scalable system architecture.",
+    github: "https://github.com/shathirs/havelock_smart.git",
     tags: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB" ]
   },
   {
     year: "2026",
-    title: "Vill 97 - Official Website",
+    title: "Villa 97, Bolgoda - Official Website",
     company: "University of Bedfordshire",
     description: "Developed a full-stack web application using React.js, Node.js and PostgreSQL.Contributed as a Scheduling Manager, planning and tracking project timelines to ensure timely delivery.Designed and implemented a User Management System for handling user registration, authentication and data management.Colloborated within a team consist of five members with divided roles as Project Manager, Startup Manager, Quality Manager, Risk Manager and Scheduling Manager using version control tools to manage code and project workflow.Worked under the Agile Methodology Concept.",
+    github: "",
+    tags: ["React", "Tailwind CSS", "Node.js", "PostgreSQL" ]
+  },
+  {
+    year: "2026",
+    title: "AI Recipe Generator",
+    description: "Developed a full-stack web application using React.js, Node.js and PostgreSQL.Google Gemini for recipe generation (and pantry-aware ideas).JWT authentication; optional SMTP password-reset emails.Users save recipes, plan weekly meals, build shopping lists (including sync from meal plans), and manage a pantry.",
+    github: "https://github.com/shathirs/ai-recipe-generator.git",
     tags: ["React", "Tailwind CSS", "Node.js", "PostgreSQL" ]
   },
   {
@@ -20,6 +29,7 @@ const experiences = [
     title: "Banana Math Game",
     company: "University of Bedfordshire",
     description: "Developed a user-friendly web application for a given API in university project.This is a puzzled game and added more events to make it fun.This was developed by using html, CSS, JavaScript, PHP and MySQL.",
+    github: "",
     tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL" ]
   },
   {
@@ -27,6 +37,7 @@ const experiences = [
     title: "Wealth Management App with AI Recommendation System",
     company: "Codewave Academy",
     description: "Built a full-stack, AI-augmented wealth management app using Next.js 14, Tailwind, Express, and MongoDB. Implemented secure REST APIs, authentication UX, and Amazon Bedrock-powered recommendations. Delivered production-ready features including logging, rate limiting, and deployment documentation.",
+    github: "https://github.com/shathirs/codewave-academy.git",
     tags: ["Next.js 14", "Tailwind CSS", "Node.js", "Express", "MongoDB", "AWS Bedrock"]
   },
   {
@@ -34,18 +45,20 @@ const experiences = [
     title: "Inventory Management System",
     company: "SLIIT City Uni - HD in IT",
     description: "Developed a complete inventory management system for a seafood restaurant client. Built responsive React front-end with RESTful APIs using Node.js and Express.js, connected to MongoDB for real-time data handling. Included role-based login, PDF reporting, and low-stock alerts.",
+    github: "",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "REST API"]
   },
   {
     year: "2023",
     title: "E-commerce Website for Luxury Watches",
-    company: "SLIIT City Uni",
+    company: "SLIIT City Uni - HD in IT",
     description: "Developed a fully functional e-commerce website with responsive modern UI. Implemented dynamic product listings, user authentication, shopping cart, and secure checkout using PHP and MySQL. Designed intuitive front-end pages with HTML, CSS, and JavaScript.",
+    github: "",
     tags: ["HTML/CSS", "JavaScript", "PHP", "MySQL"]
   }
 ];
 
-const Experience = () => {
+const Projects = () => {
   return (
     <section id="projects" className="py-24 px-4 bg-secondary/30">
       <div className="container max-w-6xl mx-auto">
@@ -64,7 +77,7 @@ const Experience = () => {
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-1/2" />
           
           <div className="space-y-12">
-            {experiences.map((exp, index) => (
+            {projects.map((exp, index) => (
               <div 
                 key={index}
                 className={`relative flex flex-col md:flex-row gap-8 ${
@@ -89,6 +102,17 @@ const Experience = () => {
                     <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                       {exp.description}
                     </p>
+                    {exp.github && (
+                      <a
+                        href={exp.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-primary hover:underline mb-4"
+                      >
+                        <Github className="w-4 h-4" />
+                        View on GitHub
+                      </a>
+                    )}
                     <div className="flex flex-wrap gap-2">
                       {exp.tags.map((tag) => (
                         <span 
@@ -113,4 +137,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Projects;
