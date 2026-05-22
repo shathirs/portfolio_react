@@ -43,9 +43,9 @@ export const projects: Project[] = [
         type: "pdf"
       },
       {
-        title: "Havelock Smart SRS Document",
-        fileUrl: "/projects/Havelock Smart/reports/srs.docx",
-        type: "docx"
+        title: "Havelock Smart Final Thesis Report",
+        fileUrl: "/projects/Havelock Smart/reports/RK - 2526110.pdf",
+        type: "pdf"
       }
     ],
     tags: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
